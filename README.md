@@ -1,5 +1,6 @@
 # ConsoleGame_DwarfFortressLike
- 
+
+Unpack jsoncpp.zip to jsoncpp folder, in the same location where ReadMe is.
 All controls shown when the game starts.
 Weapon, Armor, Health potion and Magic mushroom (boosts weapon damage) are all types of class Item.
 Saving configuration missing.
