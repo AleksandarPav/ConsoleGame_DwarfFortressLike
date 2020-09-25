@@ -1,0 +1,17 @@
+﻿  Commons.cpp
+d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\commons.cpp(45): warning C4018: '<': signed/unsigned mismatch
+  Enemy.cpp
+d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\enemy.cpp(41): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  GameHandler.cpp
+d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\gamehandler.cpp(85): warning C4018: '<': signed/unsigned mismatch
+d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\gamehandler.cpp(147): warning C4018: '<': signed/unsigned mismatch
+d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\gamehandler.cpp(148): warning C4018: '<': signed/unsigned mismatch
+  Item.cpp
+  Player.cpp
+d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\player.cpp(128): warning C4018: '>': signed/unsigned mismatch
+d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\player.cpp(154): warning C4018: '<': signed/unsigned mismatch
+d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\player.cpp(178): warning C4018: '<': signed/unsigned mismatch
+d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\player.cpp(194): warning C4018: '<': signed/unsigned mismatch
+  main.cpp
+  Generating Code...
+  DwarfFortressWannaBe.vcxproj -> D:\Projekti\repos\ConsoleGame_DwarfFortressLike\DwarfFortressWannaBe\Debug\DwarfFortressWannaBe.exe
