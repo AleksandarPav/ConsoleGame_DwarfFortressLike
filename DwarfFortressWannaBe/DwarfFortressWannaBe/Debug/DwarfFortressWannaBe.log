@@ -1,17 +1,18 @@
 ﻿  Commons.cpp
-d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\commons.cpp(45): warning C4018: '<': signed/unsigned mismatch
+d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\commons.cpp(46): warning C4018: '<': signed/unsigned mismatch
   Enemy.cpp
-d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\enemy.cpp(41): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   GameHandler.cpp
-d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\gamehandler.cpp(85): warning C4018: '<': signed/unsigned mismatch
-d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\gamehandler.cpp(147): warning C4018: '<': signed/unsigned mismatch
-d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\gamehandler.cpp(148): warning C4018: '<': signed/unsigned mismatch
+d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\gamehandler.cpp(102): warning C4018: '<': signed/unsigned mismatch
+d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\gamehandler.cpp(165): warning C4018: '<': signed/unsigned mismatch
+d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\gamehandler.cpp(166): warning C4018: '<': signed/unsigned mismatch
   Item.cpp
   Player.cpp
-d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\player.cpp(128): warning C4018: '>': signed/unsigned mismatch
-d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\player.cpp(154): warning C4018: '<': signed/unsigned mismatch
-d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\player.cpp(178): warning C4018: '<': signed/unsigned mismatch
-d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\player.cpp(194): warning C4018: '<': signed/unsigned mismatch
+d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\player.cpp(123): warning C4018: '>': signed/unsigned mismatch
+d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\player.cpp(152): warning C4018: '<': signed/unsigned mismatch
+d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\player.cpp(179): warning C4018: '<': signed/unsigned mismatch
+d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\player.cpp(198): warning C4018: '<': signed/unsigned mismatch
   main.cpp
   Generating Code...
+d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\gamehandler.cpp(766): warning C4715: 'GameHandler::FindChestIdx': not all control paths return a value
+d:\projekti\repos\consolegame_dwarffortresslike\dwarffortresswannabe\dwarffortresswannabe\gamehandler.cpp(778): warning C4715: 'GameHandler::FindEnemyIdx': not all control paths return a value
   DwarfFortressWannaBe.vcxproj -> D:\Projekti\repos\ConsoleGame_DwarfFortressLike\DwarfFortressWannaBe\Debug\DwarfFortressWannaBe.exe

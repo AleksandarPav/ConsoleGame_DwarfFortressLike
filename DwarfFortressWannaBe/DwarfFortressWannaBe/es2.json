@@ -1,0 +1,263 @@
+{
+	"chests" : 
+	{
+		"0" : 
+		{
+			"armor" : 0,
+			"boost" : 0,
+			"col" : 2,
+			"damage" : 0,
+			"health" : 0,
+			"row" : 0
+		},
+		"1" : 
+		{
+			"armor" : 8,
+			"boost" : 7,
+			"col" : 49,
+			"damage" : 2,
+			"health" : 12,
+			"row" : 0
+		},
+		"10" : 
+		{
+			"armor" : 4,
+			"boost" : 5,
+			"col" : 49,
+			"damage" : 5,
+			"health" : 10,
+			"row" : 49
+		},
+		"2" : 
+		{
+			"armor" : 5,
+			"boost" : 2,
+			"col" : 20,
+			"damage" : 10,
+			"health" : 10,
+			"row" : 4
+		},
+		"3" : 
+		{
+			"armor" : 3,
+			"boost" : 6,
+			"col" : 11,
+			"damage" : 6,
+			"health" : 4,
+			"row" : 7
+		},
+		"4" : 
+		{
+			"armor" : 4,
+			"boost" : 3,
+			"col" : 29,
+			"damage" : 8,
+			"health" : 20,
+			"row" : 13
+		},
+		"5" : 
+		{
+			"armor" : 4,
+			"boost" : 2,
+			"col" : 25,
+			"damage" : 7,
+			"health" : 11,
+			"row" : 25
+		},
+		"6" : 
+		{
+			"armor" : 6,
+			"boost" : 4,
+			"col" : 10,
+			"damage" : 12,
+			"health" : 15,
+			"row" : 28
+		},
+		"7" : 
+		{
+			"armor" : 0,
+			"boost" : 8,
+			"col" : 10,
+			"damage" : 15,
+			"health" : 12,
+			"row" : 35
+		},
+		"8" : 
+		{
+			"armor" : 7,
+			"boost" : 4,
+			"col" : 27,
+			"damage" : 12,
+			"health" : 13,
+			"row" : 40
+		},
+		"9" : 
+		{
+			"armor" : 5,
+			"boost" : 3,
+			"col" : 1,
+			"damage" : 10,
+			"health" : 8,
+			"row" : 49
+		}
+	},
+	"enemies" : 
+	{
+		"0" : 
+		{
+			"col" : 47,
+			"health" : 91,
+			"item" : 
+			{
+				"armor" : 3,
+				"damage" : 5
+			},
+			"row" : 3
+		},
+		"1" : 
+		{
+			"col" : 40,
+			"health" : 84,
+			"item" : 
+			{
+				"armor" : 3,
+				"damage" : 4
+			},
+			"row" : 21
+		},
+		"2" : 
+		{
+			"col" : 20,
+			"health" : 100,
+			"item" : 
+			{
+				"armor" : 4,
+				"damage" : 7
+			},
+			"row" : 25
+		},
+		"3" : 
+		{
+			"col" : 1,
+			"health" : 48,
+			"item" : 
+			{
+				"armor" : 2,
+				"damage" : 5
+			},
+			"row" : 27
+		},
+		"4" : 
+		{
+			"col" : 10,
+			"health" : 90,
+			"item" : 
+			{
+				"armor" : 3,
+				"damage" : 8
+			},
+			"row" : 27
+		},
+		"5" : 
+		{
+			"col" : 7,
+			"health" : 69,
+			"item" : 
+			{
+				"armor" : 5,
+				"damage" : 7
+			},
+			"row" : 44
+		},
+		"6" : 
+		{
+			"col" : 47,
+			"health" : 64,
+			"item" : 
+			{
+				"armor" : 3,
+				"damage" : 4
+			},
+			"row" : 48
+		},
+		"7" : 
+		{
+			"col" : 2,
+			"health" : 74,
+			"item" : 
+			{
+				"armor" : 3,
+				"damage" : 4
+			},
+			"row" : 49
+		}
+	},
+	"lakes" : 
+	{
+		"0" : 
+		{
+			"height" : 7,
+			"startCol" : 3,
+			"startRow" : 1,
+			"width" : 5
+		},
+		"1" : 
+		{
+			"height" : 12,
+			"startCol" : 30,
+			"startRow" : 25,
+			"width" : 5
+		}
+	},
+	"mountains" : 
+	{
+		"0" : 
+		{
+			"height" : 7,
+			"startCol" : 30,
+			"startRow" : 12,
+			"width" : 10
+		},
+		"1" : 
+		{
+			"height" : 4,
+			"startCol" : 15,
+			"startRow" : 40,
+			"width" : 8
+		}
+	},
+	"player" : 
+	{
+		"col" : 1,
+		"health" : 100,
+		"inventory" : 
+		{
+			"0" : 
+			{
+				"armor" : 2,
+				"damage" : 7,
+				"health_potion" : 6,
+				"magic_mushroom" : 3
+			}
+		},
+		"row" : 12
+	},
+	"size" : 50,
+	"trees" : 
+	{
+		"0" : 
+		{
+			"height" : 5,
+			"startCol" : 40,
+			"startRow" : 40,
+			"width" : 5
+		},
+		"1" : 
+		{
+			"height" : 10,
+			"startCol" : 45,
+			"startRow" : 20,
+			"width" : 5
+		}
+	}
+}

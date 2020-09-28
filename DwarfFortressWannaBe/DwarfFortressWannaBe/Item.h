@@ -9,7 +9,9 @@ class Item
 public:
 	virtual int GetValue() = 0;
 	virtual void SetValue(int) = 0;
+	// item can be displayed by the operator<<
 	friend ostream& operator<<(ostream& it, Item* mm);
+	// indicator for the item used
 	size_t activeItem;
 	void displayItem(size_t activeItem);
 };

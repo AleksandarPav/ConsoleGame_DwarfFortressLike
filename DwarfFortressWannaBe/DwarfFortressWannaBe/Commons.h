@@ -9,6 +9,7 @@
 #include <string>
 using namespace std;
 
+// keyboard input
 enum KeyPressed
 {
 	Key_ESC = 27,				// quit game
@@ -27,8 +28,8 @@ enum KeyPressed
 	Key_V = 86,					// view map
 	Key_v = 118,				// view map
 	Key_SPACE = 32,				// take items from chest
-	// TODO	Key_J = 74,					// save configuration
-	// TODO	Key_j = 106,				// save configuration
+	Key_J = 74,					// save configuration
+	Key_j = 106,				// save configuration
 	Key_H = 72,					// drink health potion if available
 	Key_h = 104,				// drink health potion if available
 	Key_M = 77,					// eat magic mushroom if available
@@ -36,9 +37,12 @@ enum KeyPressed
 	Key_C = 67,					// choose package of items
 	Key_c = 99,					// choose package of items
 	Key_Q = 81,					// suicide
-	Key_q = 113					// suicide
+	Key_q = 113,				// suicide
+	Key_K = 75,					// show legend and controls
+	Key_k = 107					// show legend and controls
 };
 
+// whos turn it is
 enum Turn
 {
 	Turn_PLAYER,	// player's turn
@@ -46,12 +50,14 @@ enum Turn
 	Turn_COMBAT		// nobody's turn, combat is happening
 };
 
+// protagonist's life status
 enum LifeStatus
 {
 	Status_ALIVE,	// subject is alive
 	Status_DEAD		// subject is dead
 };
 
+// each row in inventory matrix corresponds to one type of item
 enum ItemRow
 {
 	Row_WEAPON = 0,			// in package of items, weapon comes first
@@ -60,12 +66,14 @@ enum ItemRow
 	Row_MAGIC_MUSHROOM = 3	// in package of items, magic mushroom comes fourth
 };
 
+// indicator if player has anything to loot
 enum ChestStatus
 {
 	Chest_WAS_EMPTY,	// chest was empty in time of looting
 	Chest_WAS_FULL		// chest was full in time of looting
 };
 
+// indicator for ending the game
 enum CombatResult
 {
 	Result_WON,		// all enemies died
@@ -73,8 +81,10 @@ enum CombatResult
 	Result_CONTINUE	// no one died
 };
 
+// check if life status valid or not
 bool CheckLifeStatus(LifeStatus status);
 
+// location is common to everyone
 struct Location
 {
 	Location(int row, int col);
@@ -82,6 +92,7 @@ struct Location
 	int col;
 };
 
+// chest is public, just layin' on the map
 struct Chest
 {
 	// location and item characteristics

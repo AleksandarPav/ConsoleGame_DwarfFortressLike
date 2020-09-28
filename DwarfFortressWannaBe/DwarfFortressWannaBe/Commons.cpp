@@ -14,6 +14,7 @@ Chest::Chest(int row, int col, int damage, int armor, int health, int boost) : l
 	items.push_back(new MagicMushroom(boost));
 }
 
+// remove all item pointers
 Chest::~Chest()
 {
 	for (size_t i(0); i < items.size(); ++i)
@@ -23,7 +24,7 @@ Chest::~Chest()
 	}
 }
 
-// when they're picked up, they don't have values anymore
+// when they're picked up, they don't have values anymore (their value is zero)
 void Chest::CleanItems()
 {
 	for (auto item : items)
@@ -42,7 +43,7 @@ bool CheckLifeStatus(LifeStatus status)
 bool CheckNewLocation(int newLocationRow, int newLocationCol, vector<vector<char>>& map)
 {
 	// if it is within the borders and the desired field is grass, than ok
-	if ((newLocationRow >= 0) and (newLocationCol >= 0) and (newLocationRow < map.size()) and (newLocationCol < map[0].size()) and (map[newLocationRow][newLocationCol] == 'g'))
+	if ((newLocationRow >= 0) and (newLocationCol >= 0) and (newLocationRow < map.size()) and (newLocationCol < map[0].size()) and (map[newLocationRow][newLocationCol] == ','))
 		return true;
 	return false;
 }

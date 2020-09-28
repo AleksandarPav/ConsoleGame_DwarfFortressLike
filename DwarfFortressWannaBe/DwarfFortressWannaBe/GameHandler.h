@@ -13,6 +13,7 @@
 #include <stdio.h>
 #include <conio.h>
 #include <string>
+#include <sstream>
 
 using namespace std;
 
@@ -33,7 +34,7 @@ public:
 	// main funcionality
 	void MainGameLoop();
 
-	// filling map with objects defined in json and initiating them
+	// filling map with objects defined in json config file and initiating them
 	void FillMapWithNature(const Json::Value& root, const string& object);
 	void FillMapWithChests(const Json::Value& root, const string& object);
 	void FillMapWithEnemies(const Json::Value& root, const string& object);
@@ -47,14 +48,23 @@ public:
 	int GetKey();
 	// depending on the key pressed, what should happen
 	void HandleKey(int ch, Turn& turn);
-	// what enemies should when it's their turn
+	// what enemies should do when it's their turn
 	void ActivateEnemy();
 
 private:
 	// ptr to player
-	Player* player;
+	// Demonstration of smart pointer usage is a plus. :)
+	unique_ptr<Player> player;
 	// group of enemies
 	vector<Enemy*> enemies;
+
+	// defines which chest in vector of chests is found
+	size_t chestIdx;
+	// defines which enemy in vector of enemies is found
+	size_t enemyIdx;
+
+	// number of config file used
+	int activeConfig;
 
 	// map is represented as a matrix of characters
 	vector<vector<char>> map;
@@ -69,14 +79,21 @@ private:
 	bool CheckForChests();
 	// check if there are any enemies around the player
 	bool CheckForEnemies();
-	// defines which chest in vector of chests is found
-	size_t chestIdx;
-	// defines which enemy in vector of enemies is found
-	size_t enemyIdx;
 	// decide wheather it's ok for player to move to desired location
 	void MovementDecision(int addRow, int addCol);
 	// functionalities of combat
 	CombatResult Combat();
 	// return value of combat - for winning, losing or continuing the game
 	CombatResult combatResult;
+
+	// show legend and controls on screen
+	void LegendAndControls();
+	// put the appropriate ASCII character in the map
+	char MapSymbol(char letter);
+	// save current state of the map
+	void SaveConfig();
+	// find which chest from the vector is next to the player
+	size_t FindChestIdx(int row, int col);
+	// find which enemy from the vector is next to the player
+	size_t FindEnemyIdx(int row, int col);
 };

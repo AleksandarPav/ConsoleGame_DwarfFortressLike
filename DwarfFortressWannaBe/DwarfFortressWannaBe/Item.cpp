@@ -1,6 +1,7 @@
 #include "Item.h"
 // Weapon, Armor, Health potion and Magic mushroom are all items
 
+// Weapon - defines damage done to the opponent
 Weapon::Weapon(int damage)
 {
 	SetValue(damage);
@@ -17,6 +18,7 @@ void Weapon::SetValue(int damage)
 }
 
 
+// Armor - defines defense; decreases the opponent's damage
 Armor::Armor(int armorPoints)
 {
 	SetValue(armorPoints);
@@ -33,6 +35,7 @@ void Armor::SetValue(int armorPoints)
 }
 
 
+// Health potion - boosts health if possible
 HealthPotion::HealthPotion(int healthBoost)
 {
 	SetValue(healthBoost);
@@ -49,6 +52,7 @@ void HealthPotion::SetValue(int healthBoost)
 }
 
 
+// Magic mushroom - boosts damage if possible
 MagicMushroom::MagicMushroom(int damageBoost)
 {
 	SetValue(damageBoost);
@@ -65,14 +69,14 @@ void MagicMushroom::SetValue(int damageBoost)
 }
 
 
-
-ostream& operator<<(ostream& it, Item* mm)
+// display item's value
+ostream& operator<<(ostream& it, Item* i)
 {
-	it << mm->GetValue() << endl;
+	it << i->GetValue() << endl;
 	return it;
 }
 
-
+// depending which item is active, display the appropriate massage
 void Item::displayItem(size_t activeItem)
 {
 	switch (activeItem)
