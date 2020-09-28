@@ -1,6 +1,7 @@
 # ConsoleGame_DwarfFortressLike
 
 Unpack jsoncpp.zip to the same level where solution folder and ReadMe are.
+Jsoncpp library built with CMake 3.18.2, source code cloned from https://github.com/open-source-parsers/jsoncpp.
 Run program from main.cpp.
 All controls shown when the game starts.
 Weapon, Armor, Health potion and Magic mushroom (boosts weapon damage) are all types of class Item.
