@@ -24,5 +24,6 @@ When combat starts, player is asked to choose set of items in his inventory to f
 If the player doesn't have any items, dies automatically.
 Enemy is first to hit and the battle lasts until someone dies.
 If the player dies, the game is over and user gets to choose to play another game.
-If the enemy dies, it's player's turn again and he's free to move to loot chests or goes to the enemies.
+If the enemy dies, it's player's turn again.
+All of the enem's possessions transfer to the player's inventory and he's free to move to loot chests or go to the enemies.
 If all enemies die, the game is over and user gets to choose to play another game.
